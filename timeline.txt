@@ -1,0 +1,113 @@
+Timeline (1–2 Weeks)
+Week 1
+
+Day 1–2 → Setup project, resume/job input working.
+
+Day 3–4 → Implement NLP pipeline (skills extraction, embeddings).
+
+Day 5 → Add similarity scoring + results visualization.
+
+
+
+Week 2
+
+Day 6–7 → Build Streamlit front-end.
+
+Day 8 → Deploy to Streamlit Cloud.
+
+Day 9 → Test with your own resumes + real job postings.
+
+Day 10 → Polish visuals + record a short demo.
+
+Day 11–12 → Write engaging LinkedIn launch post.
+
+
+
+🔹 Step 2: NLP Preprocessing & Skill Extraction
+Goal:
+
+Prepare resume & job description text for comparison and scoring. Extract relevant skills, keywords, and entities to build features for similarity analysis.
+
+1️⃣ Text Cleaning & Normalization
+
+Objectives: Remove noise, standardize text.
+
+Actions:
+
+Lowercase all text.
+
+Remove emails, URLs, phone numbers.
+
+Remove special characters, extra whitespace.
+
+Optional: lemmatization (convert words to root form).
+
+Python Tools: re for regex, nltk or spaCy for tokenization & lemmatization.
+
+2️⃣ Tokenization & Stopword Removal
+
+Objectives: Split text into words or phrases and remove unimportant/common words.
+
+Actions:
+
+Tokenize text using spaCy or nltk.word_tokenize.
+
+Remove stopwords (the, a, and, of...).
+
+Optional: remove very short tokens (<2 characters).
+
+3️⃣ Skill/Keyword Extraction
+
+Two approaches:
+
+A. Predefined Skills Dictionary
+
+Build or use a skills list (from datasets like skills-ner or StackOverflow/LinkedIn skill lists).
+
+Match resume & job description text against this list (case-insensitive substring match or fuzzy match).
+
+Output: List of skills found in resume and in job description.
+
+B. NLP-based Extraction
+
+Use NER (Named Entity Recognition) to detect skills/entities in text.
+
+spaCy pretrained model (en_core_web_sm) can identify ORG, WORK_OF_ART, etc.
+
+Optional: train a custom NER model for skills (advanced).
+
+Use noun chunk extraction to find phrases like “data analysis”, “machine learning”, “Python programming”.
+
+4️⃣ Feature Vectorization / Embeddings
+
+Convert resume & job description text into numerical form for similarity analysis.
+
+Options:
+
+TF-IDF Vectors (basic, interpretable).
+
+Sentence Embeddings using sentence-transformers (state-of-the-art).
+
+Example model: all-MiniLM-L6-v2.
+
+Generates 384-dimensional vectors for each text.
+
+5️⃣ Output from Step 2
+
+After Step 2, you’ll have:
+
+Cleaned text for resume & job description.
+
+List of skills/keywords extracted from each.
+
+Vector embeddings for similarity scoring.
+
+Next Steps After Step 2
+
+Step 3 → Similarity & Scoring Engine:
+
+Compute cosine similarity between resume & job embeddings.
+
+Compare skills lists → compute missing vs matched skills.
+
+Output overall match score.
