@@ -64,6 +64,9 @@ C[User Pastes Job Description] --> D[Job Description Text Extraction]
 
     I --> J[Streamlit Expandable Panels]
 
+<img width="238" height="768" alt="skee_gap_architecture" src="https://github.com/user-attachments/assets/0657b4f9-5b10-4f90-a4d6-bf50fabc17a3" />
+
+
 🧩 Skills Dataset (skills.csv)
 The skills dataset use in the project is from Skill2vec (2017).
 
