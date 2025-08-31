@@ -36,22 +36,22 @@ This project provides a Streamlit-based web application where users can:
 6. Interactive Streamlit App:
    Clean, user-friendly interface to upload resumes, paste job descriptions, and instantly view results.
 
-**📂 Project Structure**
-resume-skill-matcher/
-│
-├── app.py # Streamlit main app
-├── extract_skills.py # Skill extraction + fuzzy/semantic matching logic
-├── skills.csv # Master skills dataset (expandable/customizable)
-├── requirements.txt # Project dependencies
-├── README.md # Documentation (this file)
-└── sample_resumes/ # (Optional) Example resumes for testing
-├── scores.py # compute the scores, compares
-└── extract_text.py # Extract text from resume and job desc.
-
+**📂 Project Structure**  
+resume-skill-matcher/  
+│  
+├── app.py # Streamlit main app  
+├── extract_skills.py # Skill extraction + fuzzy/semantic matching logic  
+├── skills.csv # Master skills dataset (expandable/customizable)  
+├── requirements.txt # Project dependencies  
+├── README.md # Documentation (this file)  
+└── sample_resumes/ # (Optional) Example resumes for testing  
+├── scores.py # compute the scores, compares  
+└── extract_text.py # Extract text from resume and job desc.  
+  
 **🏗️ Architecture Overview**
 flowchart TD
-A[User Uploads Resume] -->|PDF/DOCX Parsing| B[Resume Text Extraction]
-C[User Pastes Job Description] --> D[Job Description Text Extraction]
+A[User Uploads Resume] -->|PDF/DOCX Parsing| B[Resume Text Extraction]  
+C[User Pastes Job Description] --> D[Job Description Text Extraction]  
 
     B --> E[Skill Extraction via spaCy + Regex]
     D --> F[Skill Extraction via spaCy + Regex]
