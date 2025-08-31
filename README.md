@@ -50,19 +50,8 @@ resume-skill-matcher/
   
 **🏗️ Architecture Overview**
 flowchart TD
-A[User Uploads Resume] -->|PDF/DOCX Parsing| B[Resume Text Extraction]  
-C[User Pastes Job Description] --> D[Job Description Text Extraction]  
 
-    B --> E[Skill Extraction via spaCy + Regex]
-    D --> F[Skill Extraction via spaCy + Regex]
-
-    E --> G[Fuzzy Matching with skills.csv]
-    F --> G
-
-    G --> H[Sentence Transformer Embeddings for Semantic Similarity]
-    H --> I[Matched Skills / Missing Skills Classification]
-
-    I --> J[Streamlit Expandable Panels]
+<img width="2547" height="3840" alt="skeegap mermaid chart" src="https://github.com/user-attachments/assets/961911a1-1eb5-4556-bcf2-e364eff139ab" />
 
 <img width="238" height="768" alt="skee_gap_architecture" src="https://github.com/user-attachments/assets/0657b4f9-5b10-4f90-a4d6-bf50fabc17a3" />
 
