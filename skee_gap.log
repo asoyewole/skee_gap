@@ -318,3 +318,138 @@
 2025-08-23 14:55:14,491 DEBUG git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '-M', '--raw', '-z', '--no-color'], cwd=C:\Users\asoye\Documents\Projects\skee_gap, stdin=None, shell=False, universal_newlines=False)
 2025-08-23 14:55:14,583 DEBUG git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\asoye\Documents\Projects\skee_gap, stdin=<valid stream>, shell=False, universal_newlines=False)
 2025-08-23 14:55:14,663 DEBUG git.cmd Popen(['git', 'rev-list', 'origin/main..main', '--'], cwd=C:\Users\asoye\Documents\Projects\skee_gap, stdin=None, shell=False, universal_newlines=False)
+2025-08-24 17:57:12,612 DEBUG pydot pydot initializing
+2025-08-24 17:57:12,613 DEBUG pydot pydot 4.0.1
+2025-08-24 17:57:12,622 DEBUG pydot.core pydot core module initializing
+2025-08-24 17:57:56,402 INFO sentence_transformers.SentenceTransformer Use pytorch device_name: cpu
+2025-08-24 17:57:56,403 INFO sentence_transformers.SentenceTransformer Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-24 17:57:56,411 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): huggingface.co:443
+2025-08-24 17:57:56,664 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-08-24 17:57:56,706 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-08-24 17:57:56,793 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-08-24 17:57:56,831 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-08-24 17:57:56,923 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-08-24 17:57:56,958 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-08-24 17:57:57,044 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-08-24 17:57:57,084 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-08-24 17:57:57,191 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-08-24 17:57:57,231 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-08-24 17:57:57,323 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-08-24 17:57:57,359 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-08-24 17:57:57,442 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-08-24 17:57:57,522 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-08-24 17:57:57,566 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-08-24 17:57:57,855 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-08-24 17:57:57,895 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-08-24 17:57:58,053 DEBUG urllib3.connectionpool https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-08-24 17:57:58,247 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-08-24 17:57:58,287 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-08-24 17:57:58,383 DEBUG urllib3.connectionpool https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6861
+2025-08-24 17:58:27,845 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=4902
+2025-08-24 17:58:34,266 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=4902
+2025-08-24 17:58:34,321 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=6119
+2025-08-24 17:58:37,727 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=4902
+2025-08-24 17:58:37,761 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=6119
+2025-08-24 17:59:35,728 DEBUG scores Computed cosine similarity: 0.5176883339881897
+2025-08-24 17:59:35,729 DEBUG scores Computed skill match with ranking: {'skill_score': 0.18, 'overlap': ['addition', 'analyst', 'analytics', 'asset', 'business', 'canada', 'closing', 'collaboration', 'company', 'creation', 'customer', 'customers', 'data', 'design', 'designed', 'detail', 'director', 'education', 'engagement', 'excellent', 'experience', 'extract', 'financial', 'forwards', 'funding', 'gears', 'information', 'insights', 'investment', 'leading', 'management', 'mapreduce', 'mean', 'model', 'new', 'place', 'portfolio', 'position', 'post', 'program', 'provider', 'python', 'quality', 'regulators', 'relationship', 'reporting', 'saving', 'science', 'sql', 'streaming', 'swich', 'tat', 'team', 'time', 'training', 'value', 'visualization'], 'missing': ['audit', 'internal', 'support', 'life', 'tools', 'power', 'microsoft', 'solutions', 'automation', 'systems', 'best', 'deliver', 'accommodation', 'strong', 'request', 'knowledge', 'partner', 'technical', 'key', 'canadian']}
+2025-08-24 18:06:23,209 INFO sentence_transformers.SentenceTransformer Use pytorch device_name: cpu
+2025-08-24 18:06:23,210 INFO sentence_transformers.SentenceTransformer Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-24 18:06:23,213 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): huggingface.co:443
+2025-08-24 18:06:23,415 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-08-24 18:06:23,450 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-08-24 18:06:23,522 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-08-24 18:06:23,557 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-08-24 18:06:23,624 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-08-24 18:06:23,658 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-08-24 18:06:23,724 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-08-24 18:06:23,758 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-08-24 18:06:23,823 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-08-24 18:06:23,856 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-08-24 18:06:23,923 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-08-24 18:06:23,958 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-08-24 18:06:24,042 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-08-24 18:06:24,115 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-08-24 18:06:24,154 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-08-24 18:06:24,247 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-08-24 18:06:24,284 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-08-24 18:06:24,360 DEBUG urllib3.connectionpool https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-08-24 18:06:24,477 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-08-24 18:06:24,512 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-08-24 18:06:24,623 DEBUG urllib3.connectionpool https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6861
+2025-08-24 18:06:24,655 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=4902
+2025-08-24 18:06:24,666 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=6119
+2025-08-24 18:06:29,101 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=4902
+2025-08-24 18:06:29,125 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=6119
+2025-08-24 18:07:19,502 DEBUG scores Computed cosine similarity: 0.5176883339881897
+2025-08-24 18:07:19,504 DEBUG scores Computed skill match with ranking: {'skill_score': 0.18, 'overlap': ['addition', 'analyst', 'analytics', 'asset', 'business', 'canada', 'closing', 'collaboration', 'company', 'creation', 'customer', 'customers', 'data', 'design', 'designed', 'detail', 'director', 'education', 'engagement', 'excellent', 'experience', 'extract', 'financial', 'forwards', 'funding', 'gears', 'information', 'insights', 'investment', 'leading', 'management', 'mapreduce', 'mean', 'model', 'new', 'place', 'portfolio', 'position', 'post', 'program', 'provider', 'python', 'quality', 'regulators', 'relationship', 'reporting', 'saving', 'science', 'sql', 'streaming', 'swich', 'tat', 'team', 'time', 'training', 'value', 'visualization'], 'missing': ['audit', 'internal', 'support', 'life', 'tools', 'power', 'microsoft', 'solutions', 'automation', 'systems', 'best', 'deliver', 'accommodation', 'strong', 'request', 'knowledge', 'partner', 'technical', 'key', 'canadian', 'strategic', 'needs', 'site', 'looking', 'assurance', 'application', 'problem', 'access', 'base', 'career']}
+2025-08-24 18:08:12,359 INFO sentence_transformers.SentenceTransformer Use pytorch device_name: cpu
+2025-08-24 18:08:12,360 INFO sentence_transformers.SentenceTransformer Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-24 18:08:12,362 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): huggingface.co:443
+2025-08-24 18:08:12,560 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-08-24 18:08:12,595 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-08-24 18:08:12,658 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-08-24 18:08:12,702 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-08-24 18:08:12,767 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-08-24 18:08:12,804 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-08-24 18:08:12,869 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-08-24 18:08:12,906 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-08-24 18:08:12,973 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-08-24 18:08:13,013 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-08-24 18:08:13,096 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-08-24 18:08:13,136 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-08-24 18:08:13,212 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-08-24 18:08:13,282 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-08-24 18:08:13,317 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-08-24 18:08:13,410 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-08-24 18:08:13,447 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-08-24 18:08:13,533 DEBUG urllib3.connectionpool https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-08-24 18:08:13,629 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-08-24 18:08:13,667 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-08-24 18:08:13,738 DEBUG urllib3.connectionpool https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6861
+2025-08-24 18:08:13,755 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=4902
+2025-08-24 18:08:13,767 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=6119
+2025-08-24 18:08:17,778 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=4902
+2025-08-24 18:08:17,808 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=6119
+2025-08-24 18:09:09,312 DEBUG scores Computed cosine similarity: 0.5176883339881897
+2025-08-24 18:09:09,314 DEBUG scores Computed skill match with ranking: {'skill_score': 0.18, 'overlap': ['addition', 'analyst', 'analytics', 'asset', 'business', 'canada', 'closing', 'collaboration', 'company', 'creation', 'customer', 'customers', 'data', 'design', 'designed', 'detail', 'director', 'education', 'engagement', 'excellent', 'experience', 'extract', 'financial', 'forwards', 'funding', 'gears', 'information', 'insights', 'investment', 'leading', 'management', 'mapreduce', 'mean', 'model', 'new', 'place', 'portfolio', 'position', 'post', 'program', 'provider', 'python', 'quality', 'regulators', 'relationship', 'reporting', 'saving', 'science', 'sql', 'streaming', 'swich', 'tat', 'team', 'time', 'training', 'value', 'visualization'], 'missing': ['audit', 'internal', 'support', 'life', 'tools', 'power', 'microsoft', 'solutions', 'automation', 'systems', 'best', 'deliver', 'accommodation', 'strong', 'request', 'knowledge', 'partner', 'technical', 'key', 'canadian', 'strategic', 'needs', 'site', 'looking', 'assurance', 'application', 'problem', 'access', 'base', 'career']}
+2025-09-12 22:22:59,546 DEBUG pydot pydot initializing
+2025-09-12 22:22:59,547 DEBUG pydot pydot 4.0.1
+2025-09-12 22:22:59,574 DEBUG pydot.core pydot core module initializing
+2025-09-12 22:32:21,193 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=6711
+2025-09-12 22:33:10,155 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=6711
+2025-09-12 22:33:13,686 DEBUG utils.extract_text Extracted PDF via PyMuPDF; length=6711
+2025-09-12 22:33:16,405 DEBUG extract_skills spaCy model loaded with optimized pipes
+2025-09-12 22:34:22,825 INFO sentence_transformers.SentenceTransformer Use pytorch device_name: cpu
+2025-09-12 22:34:22,827 INFO sentence_transformers.SentenceTransformer Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-12 22:34:22,846 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): huggingface.co:443
+2025-09-12 22:34:23,355 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-12 22:34:23,398 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-12 22:34:23,530 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-12 22:34:23,570 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-12 22:34:23,682 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-12 22:34:23,732 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-12 22:34:23,821 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-12 22:34:23,865 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-09-12 22:34:23,994 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-12 22:34:24,043 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-12 22:34:24,141 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-12 22:34:24,179 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-12 22:34:24,298 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-12 22:34:24,383 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-12 22:34:24,427 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-09-12 22:34:24,950 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-12 22:34:24,988 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-12 22:34:25,153 DEBUG urllib3.connectionpool https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-12 22:34:25,437 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-12 22:34:25,485 DEBUG urllib3.connectionpool https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-12 22:34:25,600 DEBUG urllib3.connectionpool https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6861
+2025-09-12 22:34:25,623 DEBUG extract_skills SentenceTransformer model loaded
+2025-09-12 22:34:57,611 DEBUG extract_skills Loaded 105069 skills
+2025-09-12 22:35:06,033 DEBUG pydot pydot initializing
+2025-09-12 22:35:06,034 DEBUG pydot pydot 4.0.1
+2025-09-12 22:35:06,062 DEBUG pydot.core pydot core module initializing
+2025-09-12 22:35:31,533 DEBUG extract_skills spaCy model loaded with optimized pipes
+2025-09-12 22:35:53,440 DEBUG extract_skills Saved embedding to cache: C:\Users\asoye\Documents\Projects\skee_gap\.cache\embeddings\8bd5a9016fad967445fdf2726bd836fefc3ffe1744ba6a08bd1962a68055462e.npy
+2025-09-12 22:35:53,636 DEBUG extract_skills Saved embedding to cache: C:\Users\asoye\Documents\Projects\skee_gap\.cache\embeddings\9ff5b01bcbeaac593eb15c9b910b1903696b373d7969df53543079ab8a17ab93.npy
+2025-09-12 22:35:56,063 DEBUG scores Computed cosine similarity: 0.5291714668273926
+2025-09-12 22:35:56,065 DEBUG scores Computed skill match with ranking: {'skill_score': 0.12, 'overlap': ['architecture', 'base', 'build', 'commercial', 'drive', 'engineering', 'maintain', 'power', 'python', 'services', 'strong', 'working'], 'missing': ['model', 'grid', 'dispatch', 'models', 'advanced', 'operations', 'quantitative', 'understanding', 'investment', 'experience', 'data', 'macro', 'forecast', 'alignment', 'databases', 'communicate', 'gurobi', 'help', 'pricing', 'researcher', 'seeking', 'replication', 'technical', 'structure', 'languages', 'ancillary', 'implement', 'programming', 'dashboards', 'maintaining']}

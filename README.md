@@ -1,3 +1,11 @@
+---
+title: Project Skee Gap
+sdk: streamlit
+sdk_version: 1.25.0
+app_file: app.py
+pinned: false
+---
+
 # Project Skee Gap
 
 ## Resume-to-Job Skill Matcher

@@ -1,8 +1,8 @@
 from sklearn.metrics.pairwise import cosine_similarity
-from extract_skills import process_resume_and_job
 from utils.logging_config import get_logger
 import numpy as np
 from typing import Any, Dict
+from collections import Counter
 
 logger = get_logger(__name__)
 
@@ -20,10 +20,13 @@ def compute_similarity(resume_emb: Any, job_emb: Any) -> float:
         return 0.0
 
 
-def compute_skill_match(resume_skills: Dict[str, Any], job_skills: Dict[str, Any]) -> Dict[str, Any]:
+def compute_skill_match(resume_skills: Dict[str, Any], job_skills: Dict[str, Any], job_text: str, top_n: int = 20) -> Dict[str, Any]:
     try:
-        resume_set = set(resume_skills.get("dict_skills", []) + resume_skills.get("fuzzy_skills", []))
-        job_set = set(job_skills.get("dict_skills", []) + job_skills.get("fuzzy_skills", []))
+        resume_set = set(resume_skills.get("dict_skills", []) +
+                         resume_skills.get("fuzzy_skills", []))
+        job_list = job_skills.get("dict_skills", []) + \
+            job_skills.get("fuzzy_skills", [])
+        job_set = set(job_list)
 
         overlap = resume_set & job_set
         missing = job_set - resume_set
@@ -33,12 +36,23 @@ def compute_skill_match(resume_skills: Dict[str, Any], job_skills: Dict[str, Any
         else:
             skill_score = len(overlap) / len(job_set)
 
+        # --- Rank missing skills by frequency in job description ---
+        job_tokens = [t.lower() for t in job_text.split()]
+        freq_counter = Counter(job_tokens)
+
+        # Score missing skills by frequency in job description
+        ranked_missing = sorted(
+            missing,
+            key=lambda skill: freq_counter.get(skill.lower(), 0),
+            reverse=True
+        )[:top_n]
+
         result = {
             "skill_score": round(skill_score, 2),
             "overlap": sorted(list(overlap)),
-            "missing": sorted(list(missing)),
+            "missing": ranked_missing,  # now limited & ranked
         }
-        logger.debug("Computed skill match: %s", result)
+        logger.debug("Computed skill match with ranking: %s", result)
         return result
     except Exception as exc:
         logger.exception("Failed to compute skill match: %s", exc)
@@ -58,19 +72,3 @@ def interpret_similarity(score: float) -> str:
         logger.exception("Failed to interpret similarity score: %s", exc)
         return "Score interpretation unavailable."
     
-# Example usage
-if __name__ == "__main__":
-    resume = """Experienced Data Scientist skilled in Python, SQL, machine learning, Tableau, 
-                and cloud platforms like AWS and Azure."""
-    job = """We are hiring a Data Scientist with strong skills in Python, SQL, cloud (AWS), 
-             and visualization tools such as Tableau or Power BI."""
-
-    try:
-        results = process_resume_and_job(resume, job)
-        similarity_score = compute_similarity(results.get("resume_embedding"), results.get("job_embedding"))
-        skill_match = compute_skill_match(results.get("resume_skills", {}), results.get("job_skills", {}))
-
-        print("Cosine Similarity Score:", similarity_score)
-        print("Skill Match:", skill_match)
-    except Exception as exc:
-        logger.exception("Example run failed: %s", exc)
