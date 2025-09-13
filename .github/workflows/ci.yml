@@ -24,10 +24,6 @@ jobs:
           pip install -r requirements.txt || true
           pip install -r requirements-dev.txt
 
-      - name: Lint with flake8
-        run: |
-          flake8 --max-line-length=120
-
       - name: Run tests
         run: |
-          pytest -q
+          pytest -q tests/

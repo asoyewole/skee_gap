@@ -24,7 +24,7 @@ This project provides a Streamlit-based web application where users can:
 
 5. Gain insights into resume-job fit in an interactive and user-friendly manner
 
-🔑 Key Features
+**🔑 Key Features**
 
 1. Skill Extraction from Resume:
    Uses spaCy and regex rules to extract relevant skills from the resume text.
@@ -44,35 +44,27 @@ This project provides a Streamlit-based web application where users can:
 6. Interactive Streamlit App:
    Clean, user-friendly interface to upload resumes, paste job descriptions, and instantly view results.
 
-📂 Project Structure
-resume-skill-matcher/
-│
-├── app.py # Streamlit main app
-├── extract_skills.py # Skill extraction + fuzzy/semantic matching logic
-├── skills.csv # Master skills dataset (expandable/customizable)
-├── requirements.txt # Project dependencies
-├── README.md # Documentation (this file)
-└── sample_resumes/ # (Optional) Example resumes for testing
-├── scores.py # compute the scores, compares
-└── extract_text.py # Extract text from resume and job desc.
-
-🏗️ Architecture Overview
+**📂 Project Structure**  
+resume-skill-matcher/  
+│  
+├── app.py # Streamlit main app  
+├── extract_skills.py # Skill extraction + fuzzy/semantic matching logic  
+├── skills.csv # Master skills dataset (expandable/customizable)  
+├── requirements.txt # Project dependencies  
+├── README.md # Documentation (this file)  
+└── sample_resumes/ # (Optional) Example resumes for testing  
+├── scores.py # compute the scores, compares  
+└── extract_text.py # Extract text from resume and job desc.  
+  
+**🏗️ Architecture Overview**
 flowchart TD
-A[User Uploads Resume] -->|PDF/DOCX Parsing| B[Resume Text Extraction]
-C[User Pastes Job Description] --> D[Job Description Text Extraction]
 
-    B --> E[Skill Extraction via spaCy + Regex]
-    D --> F[Skill Extraction via spaCy + Regex]
+<img width="2547" height="3840" alt="skeegap mermaid chart" src="https://github.com/user-attachments/assets/961911a1-1eb5-4556-bcf2-e364eff139ab" />
 
-    E --> G[Fuzzy Matching with skills.csv]
-    F --> G
+<img width="238" height="768" alt="skee_gap_architecture" src="https://github.com/user-attachments/assets/0657b4f9-5b10-4f90-a4d6-bf50fabc17a3" />
 
-    G --> H[Sentence Transformer Embeddings for Semantic Similarity]
-    H --> I[Matched Skills / Missing Skills Classification]
 
-    I --> J[Streamlit Expandable Panels]
-
-🧩 Skills Dataset (skills.csv)
+**🧩 Skills Dataset (skills.csv)**
 The skills dataset use in the project is from Skill2vec (2017).
 
 @article{van2017skill2vec,
@@ -98,7 +90,7 @@ AWS
 
 You can expand this dataset to cover domain-specific skill sets (e.g., finance, healthcare, cybersecurity).
 
-📊 Example Workflow
+**📊 Example Workflow**
 
 Upload resume.pdf
 
@@ -114,7 +106,7 @@ View results:
 
 Use insights to improve your resume or assess candidate fit.
 
-🚀 Roadmap / Future Enhancements
+**🚀 Roadmap / Future Enhancements**
 
 Add resume scoring system (percentage match score)
 
@@ -128,11 +120,11 @@ Enhance semantic similarity using large language models (LLMs)
 
 Integrate with LinkedIn or job boards for automatic skill extraction
 
-📜 License
+**📜 License**
 
 This project is licensed under the MIT License.
 
-🙌 Acknowledgments
+**🙌 Acknowledgments**
 
 spaCy for NLP pipelines
 
